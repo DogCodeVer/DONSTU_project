@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-image: url(img/bg.png);
+	background-size: 100%;
+}
+
+.header{
+	width: 100%;
+	background-color: #202931 100%;
+	font-size: 14px;
+	height: 90px;
+}
+
+.top-menu {
+  background: #202931;
+}
+
+.navbar-logo {
+	display: inline-block;
+	margin: 12px 99px 12px 140px;
+	float: left;
+	height: 66px;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.menu-main li {
+	display: inline-block;
+	margin: 38px 0px;
+	margin-left: 32px;
+}
+ul.menu-main form{
+	display: inline-block;
+	margin-left: 90px;
+	margin-right: 58px;
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+	font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+}
+
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 348px;
+  margin: 0 auto;
+}
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  padding-left: 15px;
+}
+button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #202931;
+  cursor: pointer;
+}
+button:before {
+  content: "\f105";
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: FontAwesome;
+}
+
+.content h1{
+	font-size: 75px;
+	width: 763px;
+	height: 345px;
+	line-height: 88px;
+	color: #fff;
+	margin-top: 273px;
+	margin-left: 139px;
+}
+.content h3{
+	font-size: 30px;
+	line-height: 35px;
+	width: 546px;
+	color:#FCCF17;
+	margin: 34px 0 206px 139px;
+}
+.footer{
+	background-color: #202931;
+	width: 100%;
+	height: 285px;
+}
+
+.column1{
+	margin-left: 139px;
+}
+.column2{
+	margin-left: 52px;
+}
+
+.column3{
+	margin-left: 75px;
+}
+
+.column4{
+	margin-left: 75px;
+}
+
+.column4 ul li h5 a{
+	list-style-type: none;
+	font-size: 14px;
+	color: #fff;
+}
+
+.column5{
+	float: left;
+	margin-left: 231px;
+}
+
+.column5 a img{
+	margin-top: 8px;
+}
+
+.description ul li a{
+	color: #646669;
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+.description ul li{
+	list-style-type: none;
+}
+
+.description h5{
+	margin-bottom: 21px;
+	color: #fff;
+}
+
+.description a{
+	text-decoration: none;
+	margin-bottom: 21px;
+}
+
+.description{
+	display: inline-flex;
+	margin-top: 55px;
+}
+.right{
+	margin-left: 150px;;
+}
