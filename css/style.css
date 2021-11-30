@@ -5,21 +5,36 @@
 }
 body{
 	font-family: 'Roboto';
-	font-size: 0.9em;
+	font-size: 100%;
 }
-.header{
-	background-color: #202931;
-	height: 90px;
-	margin-left: 0px;
-	margin-right: 0px;
-	min-width: 900px;
+
+header {
+	background-color:#202931;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15%;
 }
-nav{
-	position: relative;
+
+.logo img {
+	margin-left: 7em;
+	max-width: 100%;
 }
-.nav ul{
-	padding: 0;
-	margin: auto;
-	width: 1140px;
-	height: 90px;
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+
+ul li a {
+
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
 }
