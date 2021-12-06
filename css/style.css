@@ -13,12 +13,19 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 15%;
+	height: 9%;
 }
 
 .logo img {
-	margin-left: 7em;
+	margin-left: 5em;
 	max-width: 100%;
+	position: sticky;
+	justify-content: center;
+	align-items: center;
+}
+
+nav{
+	margin-right: 5%;
 }
 
 ul {
@@ -32,9 +39,30 @@ ul {
 }
 
 ul li a {
-
 	padding: 10px 20px;
 	text-decoration: none;
 	color: #FFF;
 	font-weight: bold;
+}
+
+.body{
+	flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+
+.body h1{
+	margin-top: 11%;
+	margin-left: 5.5%;
+	font-size: 5.16em;
+	color: #FFF;
+}
+
+.body h2{
+	margin-left: 5.5%;
+	font-size: 1.8em;
+	color: #FCCF17;
+	margin-top: 2%;
 }
