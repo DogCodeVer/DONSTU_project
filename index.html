@@ -5,9 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Онлайн голосование</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale, maximum-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -16,21 +20,20 @@
 	<header class="header">
 		<div class="container">
 			<div class="header-wrapper">
-				<div class="header-wrapper__header-logo">
-					<img src="img/logo.png" alt="logo">
+				<div class="header-wrapper__header-logo wow fadeInLeft">
+					<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 				</div>
-				<div class="header-wrapper-right">
+				<div class="header-wrapper-right wow fadeInUp">
 					<div class="header-wrapper__menu">
 						<nav>
 							<ul class="menu-item-wrapper">
-								<li class="menu-item"><a href="#">Точки питания</a></li>
-								<li class="menu-item"><a href="#">Предложения</a></li>
-								<li class="menu-item"><a href="#">Новости</a></li>
+								<li class="menu-item"><a href="product-post.html">Точки питания</a></li>
+								<li class="menu-item"><a href="news-page.html">Новости</a></li>
 								<li class="menu-item"><a href="#">Команда</a></li>
 							</ul>
 						</nav>
 					</div>
-					<div class="header-wrapper__login">
+					<div class="header-wrapper__login wow fadeInUp">
 						<button class="rk_btn">
 							<a href="#">вход / регистрация</a>
 						</button>
@@ -52,43 +55,265 @@
 		<div class="container">
 			<div class="main-revelsal-wrapper">
 				<div class="main-revelsal-left">
-					<h1 class="main-revelsal__title">
+					<h1 class="main-revelsal__title wow fadeInLeft">
 						Онлайн-голосование среди обучающихся и работников<br>ДГТУ
 					</h1>
-					<p class="main-revelsal__desc">
+					<p class="main-revelsal__desc wow fadeInLeft">
 						Голосуйте за любимые точки питания и выбирайте лучшие места
 					</p>
 				</div>
-				<div class="main-revelsal-right">
+				<div class="main-revelsal-right wow fadeInRight">
 					<button class="rk_btn">
-						<a href="#">Добавить заведение</a>
-					</button>
-					<button class="rk_btn">
-						<a href="#">Голосовать</a>
+						<a href="#favorit-pit-id">Голосовать</a>
 					</button>
 				</div>
 
 			</div>
+			<div class="main-revelsal-down">
+				<button class="rk_btn wow fadeInUp" id="header-down-button-wrepper-id">
+					<a href="#favorit-pit-id">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><path fill="#444444" d="M13 4v2l-5 5-5-5v-2l5 5z"></path></svg>
+					</a>
+				</button>
+			</div>
 		</div>
 	</section>
+
+	<section class="favorit-pit" id="favorit-pit-id">
+		<div class="favorit-pit-wrapper">
+			<div class="container">
+				<h2 class="favorit-pit-wrapper__title wow fadeInLeft">
+					ЛУЧШИЕ ЗАВЕДЕНИЯ ПО МНЕНИЮ СТУДЕНТОВ
+				</h2>
+				<div class="favorit-pit-wrapper__item wow fadeInUp">
+					<div class="favorit-pit-photo">
+						<img src="img/photo-1.jpg" alt="photo">
+					</div>
+					<div class="favorit-pit-desc">
+						<h3>Столовая ДГТУ 10 общежитие</h3>
+						<p>Столовая</p>
+						<p>ул. Текучёва, 145, Ростов-на-Дону</p>
+						<p>пн-пт 08:00-17:30</p>
+						<div class="favorit-pit-calcBar">
+							<h4 class="favorit-pit-calcBar__nam">10</h4>
+							<div class="favorit-pit-calcBar__stars">
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="link-one-pit">Был тут и хочу оценить</a>
+					</div>
+				</div>
+				<div class="favorit-pit-wrapper__item wow fadeInUp">
+					<div class="favorit-pit-photo">
+						<img src="img/photo-1.jpg" alt="photo">
+					</div>
+					<div class="favorit-pit-desc">
+						<h3>Столовая ДГТУ 10 общежитие</h3>
+						<p>Столовая</p>
+						<p>ул. Текучёва, 145, Ростов-на-Дону</p>
+						<p>пн-пт 08:00-17:30</p>
+						<div class="favorit-pit-calcBar">
+							<h4 class="favorit-pit-calcBar__nam">10</h4>
+							<div class="favorit-pit-calcBar__stars">
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="link-one-pit">Был тут и хочу оценить</a>
+					</div>
+				</div>
+				<div class="favorit-pit-wrapper__item wow fadeInUp">
+					<div class="favorit-pit-photo">
+						<img src="img/photo-1.jpg" alt="photo">
+					</div>
+					<div class="favorit-pit-desc">
+						<h3>Столовая ДГТУ 10 общежитие</h3>
+						<p>Столовая</p>
+						<p>ул. Текучёва, 145, Ростов-на-Дону</p>
+						<p>пн-пт 08:00-17:30</p>
+						<div class="favorit-pit-calcBar">
+							<h4 class="favorit-pit-calcBar__nam">10</h4>
+							<div class="favorit-pit-calcBar__stars">
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+								<div class="pit-calcBar-star">
+									<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.068 1.73365C14.261 1.40275 14.739 1.40275 14.932 1.73365L18.9546 8.63355C19.161 8.98753 19.5032 9.24168 19.9017 9.33695L27.5499 11.1654C27.9115 11.2519 28.0556 11.6889 27.8163 11.9735L22.6382 18.131C22.3829 18.4346 22.2583 18.8269 22.2915 19.2221L22.9718 27.3137C23.0036 27.6912 22.6203 27.9654 22.2732 27.8137L15.101 24.6771C14.7179 24.5095 14.2821 24.5096 13.899 24.6771L14.0993 25.1352L13.899 24.6771L6.72677 27.8137C6.37968 27.9654 5.99645 27.6912 6.02819 27.3137L6.70848 19.2221C6.74171 18.8269 6.61705 18.4346 6.36178 18.131L1.18373 11.9735C0.944377 11.6889 1.08845 11.2519 1.45014 11.1654L9.09831 9.33695C9.49682 9.24168 9.83902 8.98753 10.0454 8.63355L14.068 1.73365Z" fill="#FCCF17" stroke="#FCCF17"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="link-one-pit">Был тут и хочу оценить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news-pit">
+		<div class="favorit-pit-wrapper">
+			<div class="container">
+				<h2 class="favorit-pit-wrapper__title wow fadeInDown">
+					ПОСЛЕДНИЕ НОВОСТИ
+				</h2>
+				<div class="favorit-pit-wrapper__item wow fadeInUp">
+					<div class="favorit-pit-wrapper__item-wrap">
+						<div class="favorit-pit-photo">
+							<img src="img/news-photo-1.jpg" alt="photo">
+						</div>
+						<div class="favorit-pit-desc news-desc">
+							<h3>Столовая ДГТУ 10 общежитие</h3>
+							<h5>7 сентября 2020</h5>
+
+							<p>Открылась новая столовая ДГТУ вместе с общежитием №10. Ректор Б.Ч.Месхи и губернатор ростовской области В.Ю.Голубев посетили новую столовую и попробовали новинки в меню</p>
+						</div>
+					</div>
+				</div>
+				<div class="favorit-pit-wrapper__item wow fadeInUp">
+					<div class="favorit-pit-wrapper__item-wrap">
+						<div class="favorit-pit-photo">
+							<img src="img/news-photo-1.jpg" alt="photo">
+						</div>
+						<div class="favorit-pit-desc news-desc">
+							<h3>Столовая ДГТУ 10 общежитие</h3>
+							<h5>7 сентября 2020</h5>
+
+							<p>Открылась новая столовая ДГТУ вместе с общежитием №10. Ректор Б.Ч.Месхи и губернатор ростовской области В.Ю.Голубев посетили новую столовую и попробовали новинки в меню</p>
+						</div>
+					</div>
+				</div>
+				<div class="favorit-pit-wrapper__item wow fadeInUp">
+					<div class="favorit-pit-wrapper__item-wrap">
+						<div class="favorit-pit-photo">
+							<img src="img/news-photo-1.jpg" alt="photo">
+						</div>
+						<div class="favorit-pit-desc news-desc">
+							<h3>Столовая ДГТУ 10 общежитие</h3>
+							<h5>7 сентября 2020</h5>
+
+							<p>Открылась новая столовая ДГТУ вместе с общежитием №10. Ректор Б.Ч.Месхи и губернатор ростовской области В.Ю.Голубев посетили новую столовую и попробовали новинки в меню</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main-about">
+		<div class="favorit-pit-wrapper">
+			<div class="container">
+				<h2 class="favorit-pit-wrapper__title wow fadeInUp">
+					О НАС
+				</h2>
+				<div class="main-about-block">
+					<p class="main-about-block__text wow fadeInLeft">
+						Сайт команды студентов первого курса<br><span>Донского Технического Государственного Университета</span><br>в рамках дисциплины “Основы проектной деятельности”
+					</p>
+					<button class="rk_btn wow fadeInRight">
+						<a href="#">Наша команда</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-wrapper">
 				<div class="footer-wrapper__item">
 					<div class="footer-block">
-						<h4 class="footer-block__title">меню</h4>
+						<h4 class="footer-block__title">О проекте</h4>
 						<nav>
 							<ul>
-								<li class="menu-item"><a href="#">Точки питания</a></li>
-								<li class="menu-item"><a href="#">Предложения</a></li>
-								<li class="menu-item"><a href="#">Новости</a></li>
 								<li class="menu-item"><a href="#">Команда</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 				<div class="footer-wrapper__item">
+					<div class="footer-block">
+						<h4 class="footer-block__title">меню</h4>
+						<nav>
+							<ul>
+								<li class="menu-item"><a href="product-post.html">Точки питания</a></li>
+								<li class="menu-item"><a href="news-page.html">Новости</a></li>
+								<li class="menu-item"><a href="#">Команда</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="footer-wrapper__item hide-block">
 					<div class="footer-block">
 						<h4 class="footer-block__title">меню</h4>
 						<nav>
@@ -101,7 +326,8 @@
 						</nav>
 					</div>
 				</div>
-				<div class="footer-wrapper__item">
+
+				<div class="footer-wrapper__item hide-block">
 					<div class="footer-block">
 						<h4 class="footer-block__title">меню</h4>
 						<nav>
@@ -114,7 +340,8 @@
 						</nav>
 					</div>
 				</div>
-				<div class="footer-wrapper__item">
+
+				<div class="footer-wrapper__item hide-block">
 					<div class="footer-block">
 						<h4 class="footer-block__title">меню</h4>
 						<nav>
@@ -127,6 +354,8 @@
 						</nav>
 					</div>
 				</div>
+				
+				
 				<div class="footer-wrapper__item">
 					<div class="footer-block">
 						<h4 class="footer-block__title">КОНТАКТЫ</h4>
@@ -164,6 +393,25 @@
 			</div>
 		</div>
 	</footer>
+
+
+
+<!-- scripts -->
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script src="https://use.fontawesome.com/e6e6077e2c.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+
+<script src="js/main.js"></script>
 	
 </body>
 </html>
