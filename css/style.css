@@ -1,3 +1,13 @@
+/*!
+Theme Name: donstu
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+*/
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -161,7 +171,7 @@ ul, li {
 .header-wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 .menu-item a{
 	transition: .4s;
@@ -177,6 +187,7 @@ ul, li {
 	color: #FFFFFF;
 
 }
+
 
 .header-wrapper-right {
 	display: flex;
@@ -589,6 +600,95 @@ ul, li {
 
 	color: #0079B2;
 }
+
+.team-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.team-profil-list__item {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #000000;
+}
+
+.team-name-list {
+	width: 100%;
+}
+.team-name-list__item {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.team-name-item-photo {
+	max-width: 70px;
+	border-radius: 100%;
+}
+
+.team-name-list {
+	width: 70%;
+}
+.team-name-item-text-wrap {
+	margin-left: 50px;
+}
+
+.team-name-item-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    margin-right: 32px;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 5px;
+}
+
+.team-name-item-soc-item {
+	display: inline-block;
+	background: #6ABAE9;
+	border-radius: 22px;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.team-name-item-soc-item svg{
+	max-width: 15px	;
+}
+
+.team-name-item-soc-wrap {
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
