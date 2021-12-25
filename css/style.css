@@ -36,6 +36,8 @@ ul, li {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 ::-webkit-input-placeholder {
@@ -429,15 +431,26 @@ ul, li {
 }
 
 
+.favorit-pit-photo{
+	width: 450px;
+	height: 300px;
+
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
 .favorit-pit-photo img{
-	max-width: 500px;
+	width: 100%;
+}
+.favorit-pit-desc {
+	width: 360px;
 }
 
 
 .favorit-pit-wrapper__item {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 .favorit-pit-wrapper__item .favorit-pit-wrapper__item-wrap {
 	display: flex;
@@ -482,7 +495,6 @@ ul, li {
 
 .favorit-pit-calcBar__stars {
 	display: flex;
-	margin-left: 15px;
 }
 
 .favorit-pit-calcBar {
@@ -492,7 +504,27 @@ ul, li {
 
 .pit-calcBar-star {
 	margin-right: 7px;
+	cursor: pointer;
 }
+
+.pit-calcBar-star svg{
+	fill: #bbb;
+	stroke: #FCCF17;
+
+	transition: .4s;
+}
+
+.pit-calcBar-star-active  svg {
+	fill: #FCCF17;
+	stroke: #FCCF17;
+}
+
+.pit-calcBar-star:hover svg {
+	fill: #FCCF17;
+	stroke: #FCCF17;
+}
+
+
 
 .favorit-pit-wrapper__item {
 	margin-bottom: 120px;
@@ -504,7 +536,7 @@ ul, li {
 }
 
 .favorit-pit-calcBar {
-	margin-top: 25px;
+	margin-top: 0px;
 }
 
 .news-desc h5{
@@ -697,9 +729,74 @@ ul, li {
 
 /* medio-start */
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1280px) {
+	.main-revelsal-bg img {
+		width: auto;
+	}
 
 }
+
+@media screen and (max-width: 1000px) {
+	.main-revelsal-wrapper {
+		flex-direction: column;
+	}
+	.main-revelsal-down {
+		display: none;
+	}
+
+	.main-about-block {
+		flex-direction: column;
+	}
+	.main-about-block__text {
+		text-align: center;
+	}
+	.main-about .rk_btn  {
+		margin-top: 30px
+	}
+
+}
+
+@media screen and (max-width: 880px) {
+	.main-revelsal__title {
+		font-size: 41px;
+		line-height: 38px;
+	}
+	.main-revelsal-right {
+		margin-top: 30px
+	}
+	.favorit-pit-wrapper__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		margin-left: 20px
+	}
+	.favorit-pit-wrapper .container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.favorit-pit-desc {
+		margin-left: 0;
+		margin-top: 25px;
+	}
+	.hide-block {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.footer-wrapper {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.favorit-pit-photo {
+		width: 320px;
+		height: 190px
+	}
+}
+
+
 
 
 /* medio-end */

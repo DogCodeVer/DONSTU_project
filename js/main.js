@@ -35,6 +35,18 @@ $("#header-down-button-wrepper-iddd").on("click","a", function (event) {
 
 });
 
+
+
+$(".favorit-pit-calcBar").on("click", function(event) {
+  $(this).hide();
+
+});
+
+
+
+
+
+
 // scroll end
 	
 
