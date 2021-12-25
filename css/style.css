@@ -783,6 +783,13 @@ ul, li {
 	.hide-block {
 		display: none;
 	}
+	.main-revelsal-bg-wrapper {
+		display: none;
+	}
+	.main-revelsal {
+		height: auto;
+		background: #777
+	}
 }
 
 @media screen and (max-width: 580px) {
